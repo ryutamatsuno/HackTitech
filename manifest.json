@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Hack Chrome",
+	"version": "1.0",
+	"description": "自動ログイン",
+	"browser_action": {
+		"default_icon": "icon/ico.png",
+		"default_popup": ""
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://portal.nap.gsic.titech.ac.jp/GetAccess/Login*",
+									"https://wlanauth.noc.titech.ac.jp/fs/customwebauth/techauth.html"],
+			"js": ["js/hack.js"]
+		}
+	],
+	"options_page": "",
+	"permissions": [
+		"tabs",
+		"storage",
+		"https://portal.nap.gsic.titech.ac.jp/*"
+	],
+	"icons": {
+		"128": "icon/ico.png"
+	}
+}
