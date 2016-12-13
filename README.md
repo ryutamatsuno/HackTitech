@@ -1,3 +1,24 @@
-# 使い方など
+#注意
+この拡張機能はパスワードを平文でおきますので超危険です。
+絶対にこの拡張機能を使用しないでください。
 
-[東工大ポータルに自動ログインするChrome拡張を作った](https://blog.mi2428.net/2016/04/08/%E6%9D%B1%E5%B7%A5%E5%A4%A7%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%AB%E3%81%AB%E8%87%AA%E5%8B%95%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%99%E3%82%8Bchrome%E6%8B%A1%E5%BC%B5%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%9F/)
+#How to Use
+
+まず、pass_sample.jsを参考にpass.jsを作ってください
+
+次にchromeでchrome://extensions/を開きます。
+デベロッパーモードにチェックを入れて、「パッケージ化されていない拡張機能を読み込む...」をクリックして
+HackTitechのフォルダを選択します。
+
+これで準備は完了です。
+
+機能
+東工大ポータル
+https://portal.nap.gsic.titech.ac.jp/GetAccess/Login?Template=userpass_key&AUTHMETHOD=UserPassword
+にアクセスするとパスワードとマトリックスを入力して自動ログイン
+
+
+WirelessLAN TokyoTechに自動ログイン
+https://wlanauth.noc.titech.ac.jp/fs/customwebauth/techauth.html
+にアクセスするとパスワードを入力して自動ログイン
+※これは完全マッチで動作するので、正確にこのアドレスにアクセスしないと動きません。
