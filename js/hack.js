@@ -26,9 +26,10 @@ hacks.push({
     var keys = [];
     var code = [];
     var pre_selector = "form[name=login] table table ";
-    keys.push($(pre_selector + "tr:nth-child(5) th").text());
     keys.push($(pre_selector + "tr:nth-child(6) th").text());
     keys.push($(pre_selector + "tr:nth-child(7) th").text());
+    keys.push($(pre_selector + "tr:nth-child(8) th").text());
+    console.log(keys);
     for(let i = 0;i<keys.length;i++){
       var key = keys[i];
       var col = "ABCDEFGHIJ".indexOf(key[1]);
@@ -43,9 +44,9 @@ hacks.push({
     //  console.log(pass[i]);
     //}
 
-    $("form[name=login] input[name=message3]").val(code[0]);
-    $("form[name=login] input[name=message4]").val(code[1]);
-    $("form[name=login] input[name=message5]").val(code[2]);
+    $("form[name=login] input[name=message4]").val(code[0]);
+    $("form[name=login] input[name=message5]").val(code[1]);
+    $("form[name=login] input[name=message6]").val(code[2]);
     $("form[name=login] input[type=submit]").click();
   }
 });
